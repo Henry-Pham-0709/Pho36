@@ -1,0 +1,146 @@
+body{
+    margin:0;
+    padding:0;
+}
+/*Navigation*/
+nav img {
+    display:inline-block;
+    width:50px;
+    margin:0;
+    border: 2px #28a745 solid;
+    border-radius: 50%;
+}
+.scrolled {
+    width: 90%;
+    margin-left:5%;
+    align-items: center;
+    background-color:rgba(58, 231, 58, 0.473)!important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin-bottom:15px;
+    box-shadow: 0 0 25px -5px rgba(29, 236, 29, 0.473); 
+    position:fixed;
+    top:10px;
+    z-index: 1030;
+    transition: all 0.5s;
+}
+.navbar-nav>.nav-item>.nav-link {
+    font-weight: 700;
+    color: #2b813f;
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.navbar-nav>.nav-item>.nav-link:hover{
+    color: #28a745;
+    border-bottom-color:#28a745;
+}
+.navbar-nav>.nav-item>.nav-link.scrolledLink {
+    color: rgba(0,0,0,0.9);
+    font-weight: 500;
+}
+.navbar-nav>.nav-item>.nav-link.scrolledLink:hover {
+    color: rgba(0,0,0,0.6);
+    border-bottom-color:rgba(0,0,0,0.6);
+}
+h1 {
+    color: #38b000;
+    font-size: 10rem;
+    font-weight: normal;
+    font-family:'Comforter Brush', cursive;
+    padding-top: 200px;
+}
+header {
+    text-align: center;
+    margin:0;
+    padding:150px;
+    background: center/cover url("/pic/header.jpg");
+}
+header > h2 {
+    color:#38b000;
+    font-style: italic;
+    position:relative;
+    bottom:2.5rem;
+}
+.secHead {
+    margin:0;
+    font-weight: bold;
+    font-family: 'Nunito';
+    font-size:60px; 
+    padding: 0;
+    letter-spacing: 2px;
+}
+.whoBack {
+    background-repeat: no-repeat;
+    background-image:url("/pic/background.jpg");
+    /* background-repeat: repeat; */
+    background-position: center center;
+    background-size: cover;
+}
+.menuBack {
+    background-repeat: no-repeat;
+    background-image:url("/pic/menuBackground.jpg");
+    /* background-repeat: repeat; */
+    background-position: center center;
+    background-size: cover;
+}
+.locationBack {
+    padding:0;
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image:url("/pic/restaurant.jpg");
+    /* background-repeat: repeat; */
+    background-position: center center;
+    background-size: cover;
+    
+}
+#locationHead {
+    color:rgba(255,255,255,0.8);
+}
+.locationText {
+    color: rgba(255,255,255,0.8);
+}
+#coverBack>#line_space {
+    margin:30px 0;
+    width:50%;
+    margin-left:25%;
+    border-top:1px solid rgba(255,255,255,0.5)
+}
+#coverBack {
+    background-color: rgba(0,0,0,0.5);
+}
+.secBody>div>ul>li>p{
+    font-size: 25px;
+    line-height: 2;
+    font-family: 'Times New Roman', Times, serif;
+}
+.secBody>div>ul {
+    list-style: none;
+}
+#line_space{
+    margin:30px 0;
+    width:50%;
+    margin-left:25%;
+    border-top:1px solid rgba(0,0,0,0.5)
+}
+
+/*END*/
+.end{
+    color: #c9ccd5df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow';
+    font-size:20px;
+    font-weight:400;   
+}
+.footer #line_space {
+    margin:0;
+    width:100%;
+    border-top:3px solid rgba(0,0,0,0.5)
+}
+/*Author*/
