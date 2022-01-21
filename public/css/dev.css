@@ -48,22 +48,26 @@ nav img {
 }
 h1 {
     color: #38b000;
-    font-size: 10rem;
+    font-size: 9rem;
     font-weight: normal;
     font-family:'Comforter Brush', cursive;
     padding-top: 200px;
+    position: relative;
+    top:10rem;
 }
 header {
     text-align: center;
     margin:0;
-    padding:150px;
+    width: 100vw;
+    height: 100vh;
     background: center/cover url("/pic/header.jpg");
+    z-index: -100;
 }
-header > h2 {
+header > div > h2 {
     color:#38b000;
     font-style: italic;
     position:relative;
-    bottom:2.5rem;
+    top:8rem;
 }
 .secHead {
     margin:0;
@@ -79,6 +83,7 @@ header > h2 {
     /* background-repeat: repeat; */
     background-position: center center;
     background-size: cover;
+    width: 100vw;
 }
 .menuBack {
     background-repeat: no-repeat;
@@ -86,6 +91,7 @@ header > h2 {
     /* background-repeat: repeat; */
     background-position: center center;
     background-size: cover;
+    width: 100vw;
 }
 .locationBack {
     padding:0;
@@ -96,6 +102,7 @@ header > h2 {
     /* background-repeat: repeat; */
     background-position: center center;
     background-size: cover;
+    width: 100vw;
     
 }
 #locationHead {
@@ -110,8 +117,10 @@ header > h2 {
     margin-left:25%;
     border-top:1px solid rgba(255,255,255,0.5)
 }
-#coverBack {
+.coverBack {
     background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
 }
 .secBody>div>ul>li>p{
     font-size: 25px;
@@ -137,6 +146,7 @@ header > h2 {
     font-family: 'Barlow';
     font-size:20px;
     font-weight:400;   
+    width: 100vw;
 }
 .footer #line_space {
     margin:0;
