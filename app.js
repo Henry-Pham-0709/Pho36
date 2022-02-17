@@ -15,8 +15,8 @@ app.get("/", (req, res) => {
     res.render("home")
 })
 
-app.get("/menu", (req, res) => {
-    res.render("menu")
+app.get("/admin", (req, res) => {
+    res.render("admin")
 })
 
 const port = process.env.PORT || 3000;
