@@ -161,6 +161,9 @@ header > div > h2 {
     width: 400px;
     height: 400px;
 }
+a {
+    text-decoration: none;
+}
 
 
 @media only screen and  (max-height: 600px) {

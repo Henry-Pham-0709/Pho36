@@ -14,7 +14,7 @@
 <body>
     <img src="/pic/logo.png" alt="Logo" id="logo">
     <div>
-        <form action="/login" method="post" class="validated-form" novalidate>
+        <form action="/admin?_method=POST" method="post" class="validated-form" novalidate>
             <section class="mb-3">
                 <label class="form-label" for="username">Enter username:</label>
                 <input class="form-control" type="text" id="username" name="username" required autofocus>
@@ -38,6 +38,8 @@
             <button class="btn btn-success btn-block">Log in</button>
         </form>
     </div>
+
+    <script src="/js/validatedForm.js"></script>
 </body>
 
 </html>
