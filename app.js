@@ -156,21 +156,21 @@ app.post("/admin/change/:id", upload.array("image"), validatePho, catchAsync(asy
 }));
 
 
-app.get("/register", catchAsync(async (req, res) => {
-    const username = 'pho36admin';
-    const password = 'phh0709';
-    const user = new User({ username });
-    await User.register(user, password)
-    res.redirect("/")
-}))
-app.get("/seed", isLoggedIn, async (req, res) => {
-    const description = "Founded in 19**, we have more than 20 years of experience about Vietnamese best cuisine - Pho. Our food is always fresh everyday from the red juicy rare steak to the green fresh basil.We have the most special broth that cook with beef bone for hours when we first start open the restaurant, and always keeping it hot and tasty throughout the day.Our chefs and services always make sure that customers will have the best experience eating at our restaurant.It will always be our pleasure to serve you."
-    const open = "All weeks (except Tuesday) from 10a.m - 8p.m"
-    const contact = "875-182-6838"
-    const pho = new Pho({ description, open, contact });
-    await pho.save();
-    res.redirect("/");
-})
+// app.get("/register", catchAsync(async (req, res) => {
+//     const username = 'pho36admin';
+//     const password = 'phh0709';
+//     const user = new User({ username });
+//     await User.register(user, password)
+//     res.redirect("/")
+// }))
+// app.get("/seed", isLoggedIn, async (req, res) => {
+//     const description = "Founded in 19**, we have more than 20 years of experience about Vietnamese best cuisine - Pho. Our food is always fresh everyday from the red juicy rare steak to the green fresh basil.We have the most special broth that cook with beef bone for hours when we first start open the restaurant, and always keeping it hot and tasty throughout the day.Our chefs and services always make sure that customers will have the best experience eating at our restaurant.It will always be our pleasure to serve you."
+//     const open = "All weeks (except Tuesday) from 10a.m - 8p.m"
+//     const contact = "875-182-6838"
+//     const pho = new Pho({ description, open, contact });
+//     await pho.save();
+//     res.redirect("/");
+// })
 
 app.post("/admin", passport.authenticate("local", { failureRedirect: "/" }), (req, res) => {
     res.redirect("/admin/change")
